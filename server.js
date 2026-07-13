@@ -42,6 +42,7 @@ checkRequiredEnvVars();
 connectDB();
 
 const app = express();
+app.set('trust proxy', 1);
 
 // ── 2. CORS CONFIGURATION ────────────────────────────────────────────────────
 
